@@ -44,4 +44,4 @@ main();
 
 This example fetches the server list and iterates over each server, logging the server name, map, number of players, and whether it is an official server.
 
-Please note that there are currently no other endpoints available. More endpoints will be added in the future.
+Please note that there are currently no other endpoints available. More endpoints will be added in the future as soon as they are available within the BattleBit Remastered API.
