@@ -18,5 +18,12 @@ jobs:
         with:
           node-version: "18.16"
 
+      - name: Install dependencies and build project
+        run: |
+          npm install
+          npm run build:esm
+
       - name: Run tests
-        run: npm test
+        run: |
+          cd test
+          node index.js
