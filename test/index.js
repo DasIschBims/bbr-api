@@ -1,4 +1,4 @@
-const { Client } = require('../dist/index');
+const { Client } = require('../dist/Index');
 
 const bbrApiClient = new Client();
 
