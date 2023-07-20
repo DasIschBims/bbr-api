@@ -12,10 +12,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "test": "npm run build:esm && node test/index.js"
+    "build": "npm i && rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "npm i && tsc",
+    "build:cjs": "npm i && tsc --module CommonJS --outDir dist/cjs",
+    "test": "npm run build:esm && cd test && node index.js\""
   },
   "keywords": [
     "battlebit",
