@@ -1,6 +1,6 @@
 {
   "name": "bbr-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An API wrapper for the BattleBit Remastered public API.",
   "main": "dist/cjs/Index.js",
   "module": "dist/Index.js",
