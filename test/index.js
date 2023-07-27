@@ -1,6 +1,6 @@
 const { Client } = require('../dist/Index');
 
-const bbrApiClient = new Client();
+const bbrApiClient = new Client({customUserAgent: false});
 
 async function main() {
     const response = await bbrApiClient.getServerList();

@@ -8,7 +8,7 @@ class GetServerList implements Request {
     METHOD: Method = Method.GET;
     ENDPOINT: string = 'Servers/GetServerList';
 
-    public async execute(): Promise<ServerList> {
+    public async execute(customUserAgent?: string | boolean): Promise<ServerList> {
         const url = `https://${Constants.API.HOST}/${this.ENDPOINT}`;
 
         try {
@@ -17,7 +17,7 @@ class GetServerList implements Request {
                 url: url,
                 headers: {
                     'Content-Type': 'application/json',
-                    'User-Agent': Constants.USER_AGENT
+                    'User-Agent': customUserAgent ? Constants.USER_AGENT : ''
                 }
             });
 
